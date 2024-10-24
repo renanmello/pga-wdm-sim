@@ -27,32 +27,32 @@ Para rodar este projeto, é necessário ter Python instalado, bem como as biblio
 ### Passos para instalação:
 
 1. Clone o repositório:
-
+```bash
 git clone https://github.com/renanmello/pga-wdm-sim.git
 cd seu-repositorio
-
+````
 2. Crie um ambiente virtual (opcional, mas recomendado):
-
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/MacOS
 venv\Scripts\activate  # Windows
-
+```
 3. Instale as dependências:
-
+```bash
 pip install -r requirements.txt
-
+```
 Instalação do MPI:
 
 Para executar o código paralelizado, também é necessário instalar uma implementação do MPI, como o MPICH ou o OpenMPI. Para instalá-lo:
 
 Em distribuições Linux (Debian/Ubuntu):
-
+```bash
 sudo apt-get install mpich
-
+```
 Em sistemas macOS usando Homebrew:
-
+```bash
     brew install mpich
-
+```
 Em sistemas Windows, siga este guia.
 
 Execução
@@ -60,7 +60,7 @@ Execução
 Após a instalação do MPI e das dependências do projeto, o código pode ser executado com múltiplos processos utilizando o comando mpiexec.
 Exemplo de execução:
 
-mpiexec -n 4 python main.py
+mpiexec -n 4 python sim.py
 
 Neste exemplo, o código será executado utilizando 4 processos paralelos. Ajuste o número de processos (-n) de acordo com o ambiente disponível.
 Referências
