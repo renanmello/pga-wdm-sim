@@ -30,6 +30,7 @@ Para rodar este projeto, é necessário ter Python instalado, bem como as biblio
 
 git clone https://github.com/renanmello/pga-wdm-sim.git
 cd seu-repositorio
+
 2. Crie um ambiente virtual (opcional, mas recomendado):
 
 python -m venv venv
