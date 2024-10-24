@@ -59,9 +59,9 @@ Execução
 
 Após a instalação do MPI e das dependências do projeto, o código pode ser executado com múltiplos processos utilizando o comando mpiexec.
 Exemplo de execução:
-
+```bash
 mpiexec -n 4 python sim.py
-
+```
 Neste exemplo, o código será executado utilizando 4 processos paralelos. Ajuste o número de processos (-n) de acordo com o ambiente disponível.
 Referências
 
